@@ -6,8 +6,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiModule {
-    // Use 10.0.2.2 for Android emulator to reach host localhost:8000
-    private const val BASE_URL = "http://10.0.2.2:8000/" // <- change this if needed
+    private const val BASE_URL = "http://10.0.2.2:8000/"
 
     private val logging = HttpLoggingInterceptor().apply {
         level = HttpLoggingInterceptor.Level.BODY
